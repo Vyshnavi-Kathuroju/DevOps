@@ -11,7 +11,7 @@ This repo is structured as DevOps Concepts, Technologies, Platforms and Tools.
 - Cloud
   
 ### Platforms
-- GitHub
+- [GitHub](Platforms/Github.md)
 - Google Cloud Platform (GCP)
 - Microsoft Azure
 - Amazon Web Services (AWS)
