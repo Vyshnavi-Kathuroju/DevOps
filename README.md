@@ -5,9 +5,11 @@ Creating this repo to document my progress, ideas and understanding as I explore
 This repo is structured as DevOps Concepts, Technologies, Platforms and Tools.
 
 ### Concepts
-- Code Repository
+- [Aritfacts](/Concepts/Artifacts.md)
+- [Code Repository](/Concepts/Code-Repository.md)
 
 ### Technology
+- [Version Control System](</Technology/Version Control System.md>)
 - Cloud
   
 ### Platforms
@@ -17,4 +19,4 @@ This repo is structured as DevOps Concepts, Technologies, Platforms and Tools.
 - Amazon Web Services (AWS)
 
 ### Tools
-- Git
+- [Git](/Tools/Git.md)
