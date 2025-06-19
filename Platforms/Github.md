@@ -80,16 +80,21 @@ We usually create a commit
 git add -A
 ```
 
+To unstage the changes use `git reset`
+```
+git reset
+```
+
 `git commit` creates a local commit.
 
 ```
-git commit
+git commit -m '[commit message]'
 ```
 
-`git pull` will upload the local changes to the remote repo.
+`git push` will upload the local changes to the remote repo.
 
 ```
-git pull
+git push
 ```
 
 

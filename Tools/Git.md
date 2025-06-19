@@ -50,19 +50,16 @@ git merge origin/main
 
 #### _Sync local changes remotely_
 
-`git add` adds the changes to Staging Area
+`git add` adds the changes to Staging Area.
+`git reset` unstages the changes.
 `git commit` creates a local commit.
-`git pull` will upload the local changes remotely.
+`git push` will upload the local changes remotely.
 
-```
-git add -A
-git commit
-git pull
-```
-
-`git reset` unstages the changes
 ```
 git reset
+git add -A
+git commit -m '[commit message]'
+git push
 ```
 
 #### _How does a development team work with Git ?_
