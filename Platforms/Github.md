@@ -27,7 +27,7 @@ I have currently created four folders in my repo to for a high level structure. 
 
 ## Git Command Line
 
-Now that the basic project structure is already created through Github Website, a local development environment is needed to work with it locally. 
+Now that the basic project structure is already created through Github Website, a [local development environment](</Tools/Local Development Environment.md>) is needed to work with it locally. 
 
 Before anything else, the project that already exists on the remote repo needs to be copied locally. 
 - _Using User Interface (UI)_. One option to download the ZIP file using Github Website or through Github Desktop.
