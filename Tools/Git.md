@@ -6,7 +6,7 @@ We generally learn `Git` in the context of Github or other Code Repository. Git 
 
 Git as a technology enables us to manage and track the progress and history of our project.
 
-## So what does Git help us do exactly ?
+## Git operations, what do they enable us to do ?
 
 #### _There is a remote repository that you need to clone on your system locally_
 
@@ -62,7 +62,7 @@ git commit -m '[commit message]'
 git push
 ```
 
-#### _Signed Commits_
+#### _Sign Commits_
 
 Once you have added the Signing Keys,
 
@@ -76,7 +76,7 @@ To automatically sign all the commits,
 git config --global commit.gpgsign true
 ```
 
-#### _To undo the last commit locally_
+#### _Undo the last commit_
 
 ```
 git reset --soft HEAD~1
