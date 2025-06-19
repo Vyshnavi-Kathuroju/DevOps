@@ -62,6 +62,26 @@ git commit -m '[commit message]'
 git push
 ```
 
+#### _Signed Commits_
+
+Once you have added the Signing Keys,
+
+To sign a specific commit,
+```
+git commit -S -m 'Signed Commit'
+```
+
+To automatically sign all the commits,
+```
+git config --global commit.gpgsign true
+```
+
+#### _To undo the last commit locally_
+
+```
+git reset --soft HEAD~1
+```
+
 #### _How does a development team work with Git ?_
 
 `git push` will push the code to the main branch of the repo. If you are working with a different branch, you need to set the origin accordingly. 
@@ -75,6 +95,7 @@ When a team member has a feature to implement or a bug to fix, they always creat
 Git powers Github and other Git enabled Source Code Repositories.
 
 [Getting Started with Github](Github.md)
+
 
 
 

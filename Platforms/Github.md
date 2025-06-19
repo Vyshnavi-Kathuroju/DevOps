@@ -27,6 +27,8 @@ I have currently created four folders in my repo to for a high level structure. 
 
 ## Git Command Line
 
+### Getting Started
+
 Now that the basic project structure is already created through Github Website, a [local development environment](</Tools/Local Development Environment.md>) is needed to work with it locally. 
 
 Before anything else, the project that already exists on the remote repo needs to be copied locally. 
@@ -97,7 +99,46 @@ git commit -m '[commit message]'
 git push
 ```
 
+### Authentication
 
+If you have not authenticated to your Github from Git CLI and perform `git push`, you will be prompted with different Sign-in options.
+
+One option is a browser based authentication. If you choose this, new browser tab will be opened with instructions and asking for permission to allow Git Credential Manager to manager you sign-in. You can later view this integration under 
+
+_Settings > Integrations > Applications > Authorized OAuth Apps_.
+
+Another option is to use SSH Key based authentication. You can use this SSH Key for signing commits. Once you generate SSH key pair, add the public key under 
+
+_Settings > Access > SSH and GPG Keys > New SSH Key> Authentication Key_.
+
+### Branch protection rules
+
+If you tried to make unsigned commit, you will observe that it will allowed. If you want block any unsigned commits to your repo, you need to specify this under 
+
+_Repository Settings > Code and automation > Branches > Branch protection rules > Add branch ruleset > Check Require signed commits > Save changes_
+
+### Signing Commits
+
+When you push the commits without signing, the commit does not have a _Verified_ tag if the vigilant mode is not enabled.
+If the `vigilant` mode is enabled, any unsigned commits will be shown as `Unvertified`.
+
+Enable _vigilant mode_ under _Settings > SSH and GPG Keys > Vigilant mode_.
+
+To verify a commit, you need to use SSH Keys or GPG Keys for signing. Refer to the documentation for generating such keys.
+
+Once you have generated the public/private key pair, you need to configure Git CLI to use this key for signing commits and also add the public key to Github so that it can be verified. _New SSH Key > Signing Key_.
+
+To sign a specific commit,
+```
+git commit -S -m 'Signed Commit'
+```
+
+To automatically sign all the commits,
+```
+git config --global commit.gpgsign true
+```
+
+Any commits you make after this point will be tagged as `Verfied`.
 
 
 
