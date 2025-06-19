@@ -24,3 +24,40 @@ As I am exploring Github from a beginner's perspective, I started with Github we
    - When you add a `\` to the the end of the filename, it will be treated as directory.
 
 I have currently created four folders in my repo to for a high level structure. Everything was done within the Github website itself at this point. I did not have to setup or install anything on my local system. But I see that I have to use a lot of clicks to get the work done. This approach is not feasible for complex development work. After working for a couple of hours, this process seems tedious. As I know I have to repeat this process on a daily basis, I need a local setup to build my project going forward.
+
+## Git Command Line
+
+Now that the basic project structure is already created through Github Website, a local development environment is needed to work with it locally. 
+
+Before anything else, the project that already exists on the remote repo needs to be copied locally. 
+- _Using User Interface (UI)_. One option to download the ZIP file using Github Website or through Github Desktop.
+- _Using Command Line Interface (CLI)_. A more interesting option and a developer way of doing this is to do a `git clone` using the Git CLI.
+
+[What is Git?](/Tools/Git.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
