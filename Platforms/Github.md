@@ -35,7 +35,62 @@ Before anything else, the project that already exists on the remote repo needs t
 
 [What is Git?](/Tools/Git.md)
 
+Once you have Git installed on your system, you can start working with your project on Github.
 
+`git clone` will allow you to copy the repo locally.
+
+```
+git clone [URL]
+```
+
+To make sure you have the latest changes or commit locally, first do a `git status` to see if there are any changes made locally and then `git fetch` to see any remote changes.
+
+```
+git status
+git fetch
+```
+
+`git fetch` will not return any output if there are no latest changes on the remote repo.
+
+You can also use `git log` to see the local commit history.
+
+```
+git log --one-line
+```
+
+`git merge` will merge the remote repo changes locally
+
+```
+git merge origin/main
+```
+
+Once you are have the latest copy of the repo, you can start to make changes locally - add files, update files or delete files.
+
+After you have made the required changes locally, its time to `commit` and `push` the changes.
+
+Commit is like a checkpoint. When you create a commit, a checkpoint is created, enabling you to revert back to this commit incase you need to undo the changes. 
+We usually create a commit 
+- once we have made changes that we are ready to share with others.
+- when you want to save one approach to the problem
+- or just save your progress so far
+
+`git add -A` adds all the changes to the Staging Area
+
+```
+git add -A
+```
+
+`git commit` creates a local commit.
+
+```
+git commit
+```
+
+`git pull` will upload the local changes to the remote repo.
+
+```
+git pull
+```
 
 
 

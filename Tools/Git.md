@@ -13,7 +13,7 @@ Git as a technology enables us to manage and track the progress and history of o
 When you have a remote repo that need to copy locally, perform `git clone`. 
  
 ``` 
-git clone {URL}
+git clone [URL]
 ```
 
 #### _You made changes to the local copy and now you want to save them_
@@ -32,9 +32,42 @@ When you commit the code, the changes are still sitting on you local system. To 
 git push --set-upstream origin main
 ```
 
+#### _Sync remote changes locally_
+
+When someone in your team made changes to the repo, you need to sync the changes locally so that you work with the latest copy of the code.
+
+`git status` shows you the changes you have made locally after the last fetch.
+`git fetch` allow you to see the changes between the local copy and the remote copy, if there are any.
+`git log` shows the local commit history.
+`git merge` will merge the remote changes locally.
+
+```
+git status
+git log --one-line
+git fetch
+git merge origin/main
+```
+
+#### _Sync local changes remotely_
+
+`git add` adds the changes to Staging Area
+`git commit` creates a local commit.
+`git pull` will upload the local changes remotely.
+
+```
+git add -A
+git commit
+git pull
+```
+
+`git reset` unstages the changes
+```
+git reset
+```
+
 #### _How does a development team work with Git ?_
 
-The above command will push the code to the main branch of the repo. If you are working with a different branch, you need to set the origin accordingly. 
+`git push` will push the code to the main branch of the repo. If you are working with a different branch, you need to set the origin accordingly. 
 
 Within an enterprise, you always, work with a branch. No one touches the sacred `master` branch. 
 
